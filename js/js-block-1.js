@@ -1181,22 +1181,27 @@
 // Виклик функції formatMessage("Nunc sed turpis a felis in nunc fringilla", 15) повертає "Nunc sed turpis..."
 // Виклик функції formatMessage("Nunc sed turpis a felis in nunc fringilla", 41) повертає "Nunc sed turpis a felis in nunc fringilla"
 
-function formatMessage(message, maxLength) {
-  let result;
-  // Change code below this line
-  
 
+// function formatMessage(message, maxLength) {
+//   let result;
+//   // Change code below this line
 
-  /// Change code above this line
-  return result;
-}
+//     if (message.length <= maxLength) {
+//       result = message
+//     } else if (message.length > maxLength) {
+//       result = message.slice(0, maxLength) + "...";
+//   }
 
-console.log(formatMessage("Curabitur ligula sapien", 16));
-console.log(formatMessage("Curabitur ligula sapien", 23));
-console.log(formatMessage("Vestibulum facilisis purus nec", 20));
-console.log(formatMessage("Vestibulum facilisis purus nec", 30));
-console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15));
-console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41));
+//   /// Change code above this line
+//   return result;
+// }
+
+// console.log(formatMessage("Curabitur ligula sapien", 16));
+// console.log(formatMessage("Curabitur ligula sapien", 23));
+// console.log(formatMessage("Vestibulum facilisis purus nec", 20));
+// console.log(formatMessage("Vestibulum facilisis purus nec", 30));
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15));
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41));
 
 
 /**
@@ -1204,13 +1209,110 @@ console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41));
   | TASK # 34
   |============================
 */
+
+// Функція normalizeInput(input) приймає рядок (параметр input) і повертає такий самий рядок, але в нижньому регістрі. Присвой змінній normalizedInput вираз створення рядка у нижньому регістрі з параметра input.
+
+// Оголошена функція normalizeInput(input)
+// Виклик функції normalizeInput("Hello world") повертає "hello world"
+// Виклик функції normalizeInput("This ISN'T SpaM") повертає "this isn't spam"
+// Виклик функції normalizeInput("Big SALE") повертає "big sale"
+
+
+// // МЕЛЕНЬКИЕ БУКВЫ
+// function normalizeInput(input) {
+//   const normalizedInput = input.toLowerCase(); // Change this line
+
+//   return normalizedInput;
+// }
+
+// console.log(normalizeInput("Hello world"));
+// console.log(normalizeInput("This ISN'T SpaM"));
+// console.log(normalizeInput("Big SALE"));
+
+
+// // БОЛЬШИЕ БУКВЫ
+// function normalizeInput(input) {
+//   const normalizedInput = input.toUpperCase(); // Change this line
+
+//   return normalizedInput;
+// }
+
+// console.log(normalizeInput("Hello world"));
+// console.log(normalizeInput("This ISN'T SpaM"));
+// console.log(normalizeInput("Big SALE"));
+
+
 /**
   |============================
   | TASK # 35
   |============================
 */
+
+// Функція checkForName(fullname, name) приймає два параметри та повертає буль true або false - результат перевірки входження підрядка name у рядок fullname.
+
+// fullname - повне ім'я, що складається з двох слів (імені та прізвища), розділених пробілом.
+// name - ім'я для перевірки входження в повне ім'я.
+// Присвой змінній result вираз перевірки входження імені (параметр name), у повне ім'я (параметр fullname). Нехай функція чітко розрізняє регістр літер, тобто «Петя» і «петя» - для неї різні імена.
+
+// Оголошена функція checkForName(fullname, name).
+// Виклик функції checkForName("Egor Kolbasov", "Egor") повертає true
+// Виклик функції checkForName("Egor Kolbasov", "egor") повертає false
+// Виклик функції checkForName("Egor Kolbasov", "egOr") повертає false
+// Виклик функції checkForName("Egor Kolbasov", "Zhenya") повертає false
+// Виклик функції checkForName("Vadim Nekrasov", "Vadim") повертає true
+// Виклик функції checkForName("Vadim Nekrasov", "vadim") повертає false
+// Виклик функції checkForName("Vadim Nekrasov", "Dima") повертає false
+
+
+// function checkForName(fullName, name) {
+//  const result = fullName.includes(name); // Change this line
+//   return result;
+// }
+
+// console.log(checkForName("Egor Kolbasov", "Egor"));
+// console.log(checkForName("Egor Kolbasov", "egor"));
+// console.log(checkForName("Egor Kolbasov", "egOr"));
+// console.log(checkForName("Egor Kolbasov", "Zhenya"));
+// console.log(checkForName("Vadim Nekrasov", "Vadim"));
+// console.log(checkForName("Vadim Nekrasov", "vadim"));
+// console.log(checkForName("Vadim Nekrasov", "Dima"));
+
+
 /**
   |============================
   | TASK # 36
   |============================
 */
+
+// Функція checkForSpam(message) приймає рядок (параметр message), перевіряє його на вміст заборонених слів spam і sale, і повертає результат перевірки. Слова в рядку параметра message можуть бути у довільному регістрі, наприклад SPAM або sAlE.
+
+// Якщо знайшли заборонене слово (spam або sale) то функція повертає буль true.
+// Якщо в рядку відсутні заборонені слова, функція повертає буль false.
+// Оголошена функція checkForSpam(message).
+// Виклик функції checkForSpam("Latest technology news") повертає false
+// Виклик функції checkForSpam("JavaScript weekly newsletter")повертає false
+// Виклик функції checkForSpam("Get best sale offers now!") повертає true
+// Виклик функції checkForSpam("Amazing SalE, only tonight!") повертає true
+// Виклик функції checkForSpam("Trust me, this is not a spam message") повертає true
+// Виклик функції checkForSpam("Get rid of sPaM emails. Our book in on sale!") повертає true
+// Виклик функції checkForSpam("[SPAM] How to earn fast money?") повертає true
+
+
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+
+//   message = message.toLowerCase();
+//   result = message.includes("spam") || message.includes("sale");
+
+//   // Change code above this line
+//   return result;
+// }
+
+// console.log(checkForSpam("Latest technology news"));
+// console.log(checkForSpam("JavaScript weekly newsletter"));
+// console.log(checkForSpam("Get best sale offers now!"));
+// console.log(checkForSpam("Amazing SalE, only tonight!"));
+// console.log(checkForSpam("Trust me, this is not a spam message"));
+// console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!"));
+// console.log(checkForSpam("[SPAM] How to earn fast money?"));

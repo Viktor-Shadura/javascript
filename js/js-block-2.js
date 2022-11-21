@@ -515,22 +515,24 @@
 // Виклик функції calculateTotal() з випадковим числом повертає правильне значення
 
 
-function calculateTotal(number) {
- // Change code below this line
+// function calculateTotal(number) {
+//  // Change code below this line
 
+//   let total = 0;
 
+//   for (let i = 1; i <= number; i += 1) {
+//     total += i;
+//   }
 
-  // Change code above this line
-}
+//   return total;
+//   // Change code above this line
+// }
 
-
-
-
-
-
-
-
-
+// console.log(calculateTotal(1));
+// console.log(calculateTotal(3));
+// console.log(calculateTotal(7));
+// console.log(calculateTotal(18));
+// console.log(calculateTotal(24));
 
 
 /**
@@ -538,21 +540,119 @@ function calculateTotal(number) {
   | TASK # 19
   |============================
 */
+
+// Доповни код циклу for таким чином, щоб він послідовно логував усі елементи масиву fruits.
+
+// Оголошена змінна fruits
+// Значення змінної fruits - це масив ["apple", "plum", "pear", "orange"]
+// Оголошена змінна i - лічильник циклу
+// Початкове значення змінної i дорівнює 0
+// Умова циклу приводиться до true доти, доки i менше за 4
+// На кожній ітерації значення змінної i збільшується на одиницю
+// В тілі циклу for оголошується змінна const fruit і цій змінній присвоюється значення - елемент масиву
+// В тілі циклу for використовується виведення у консоль змінної fruit
+
+
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// for (let i = 0; i < fruits.length; i += 1) { // Change this line
+//   const fruit = fruits[i]; // Change this line
+//   console.log(fruit);
+// }
+
+
 /**
   |============================
   | TASK # 20
   |============================
 */
+
+// Напиши функцію calculateTotalPrice(order), яка приймає один параметр order - масив чисел, і обчислює загальну суму його елементів. Загальна сума елементів повинна зберігатися у змінній total, яка повертається як результат роботи функції.
+
+// Оголошена функція calculateTotalPrice(order)
+// Виклик функції calculateTotalPrice([12, 85, 37, 4]) повертає 138
+// Виклик функції calculateTotalPrice([164, 48, 291]) повертає 503
+// Виклик функції calculateTotalPrice([412, 371, 94, 63, 176]) повертає 1116
+// Виклик функції calculateTotalPrice() з випадковим масивом повертає правильне значення
+
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+//   for (const argument of order) {
+//     total += argument;
+//   }
+//   // Change code above this line
+//   return total;
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+
+
 /**
   |============================
   | TASK # 21
   |============================
 */
+
+// Напиши функцію findLongestWord(string), яка приймає довільний рядок, що складається тільки зі слів, розділених пробілом (параметр string), і повертає найдовше слово в цьому рядку.
+
+// Оголошена функція findLongestWord(string)
+// Виклик функції findLongestWord("The quick brown fox jumped over the lazy dog") повертає jumped
+// Виклик функції findLongestWord("Google do a roll") повертає Google
+// Виклик функції findLongestWord("May the force be with you") повертає force
+// Виклик функції findLongestWord() з випадковим рядком повертає правильне значення
+
+
+// function findLongestWord(string) {
+//   let words = string.split(" ");
+//   let longWord = words[0];
+//   for (const word of words) {
+//     if( word.length > longWord.length) {
+//         longWord = word;
+//     }
+//   }
+//   return longWord;
+//   // Change code above this line
+// }
+
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+// console.log(findLongestWord("Google do a roll"));
+// console.log(findLongestWord("May the force be with you"));
+
+
 /**
   |============================
   | TASK # 22
   |============================
 */
+
+// Доповни код функції createArrayOfNumbers(min, max) таким чином, щоб вона повертала масив усіх цілих чисел від значення min до max.
+
+// Оголошена функція createArrayOfNumbers(min, max)
+// Виклик функції createArrayOfNumbers(1, 3) повертає [1, 2, 3]
+// Виклик функції createArrayOfNumbers(14, 17) повертає [14, 15, 16, 17]
+// Виклик функції createArrayOfNumbers(29, 34) повертає [29, 30, 31, 32, 33, 34]
+// Виклик функції createArrayOfNumbers() з випадковими min і max повертає правильний масив
+// В циклі for використовувався метод push
+
+
+function createArrayOfNumbers(min, max) {
+  const numbers = [];
+  // Change code below this line
+
+  // Change code above this line
+  return numbers;
+}
+
+
+console.log(createArrayOfNumbers(1, 3));
+console.log(createArrayOfNumbers(14, 17));
+console.log(createArrayOfNumbers(29, 34));
+
+
 /**
   |============================
   | TASK # 23

@@ -399,12 +399,16 @@
 // Змінній lastThreeEls присвоєна копія частини масиву fruits після застосування методу slice з правильними аргументами
 
 
-const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
 
-// Change code below this line
-const firstTwoEls = ;
-const nonExtremeEls = ;
-const lastThreeEls = ;
+// // Change code below this line
+// const firstTwoEls = fruits.slice(0,2);
+// const nonExtremeEls = fruits.slice(1,4);
+// const lastThreeEls = fruits.slice(-3);
+
+// console.log(firstTwoEls);
+// console.log(nonExtremeEls);
+// console.log(lastThreeEls);
 
 
 /**
@@ -412,21 +416,123 @@ const lastThreeEls = ;
   | TASK # 15
   |============================
 */
+
+// Доповни код таким чином, щоб у змінній allClients утворився масив усіх елементів масивів oldClients і newClients.
+
+// Оголошена змінна oldClients
+// Значення змінної oldClients - це масив ["Mango", "Ajax", "Poly", "Kiwi"]
+// Оголошена змінна newClients
+// Значення змінної newClients - це масив ["Peach", "Houston"]
+// Оголошена змінна allClients
+// Значення змінної allClients - це масив ["Mango", "Ajax", "Poly", "Kiwi", "Peach", "Houston"]
+// Змінній allClients присвоєний масив після застосування методу concat з правильними аргументами
+
+
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Peach', 'Houston'];
+
+// const allClients = oldClients.concat(newClients); // Change this line
+
+// console.log(allClients);
+
+
 /**
   |============================
   | TASK # 16
   |============================
 */
+
+// Напиши функцію makeArray(firstArray, secondArray, maxLength) для створення нового масиву з усіма елементами двох вихідних firstArray і secondArray. Параметр maxLength містить максимально допустиму довжину нового масиву.
+
+// Якщо кількість елементів нового масиву більша за maxLength, функція повинна повернути копію масиву довжиною maxLength елементів. В іншому випадку функція повинна повернути новий масив повністю.
+
+// Оголошена функція makeArray(firstArray, secondArray, maxLength)
+// Виклик makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3) повертає ["Mango", "Poly", "Ajax"]
+// Виклик makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4) повертає ["Mango", "Poly", "Houston", "Ajax"]
+// Виклик makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3) повертає ["Mango", "Ajax", "Chelsea"]
+// Виклик makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2) повертає ["Earth", "Jupiter"]
+// Виклик makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4) повертає ["Earth", "Jupiter", "Neptune", "Uranus"]
+// Виклик makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0) повертає []
+// Виклик функції makeArray() з випадковими масивами і випадковим числом повертає правильний масив
+
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//     // Change code below this line
+//   return firstArray.concat(secondArray).slice(0,maxLength);
+  
+//     // Change code above this line
+//   }
+
+// console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
+// console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4));
+// console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3));
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2));
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4));
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0));
+
+
 /**
   |============================
   | TASK # 17
   |============================
 */
+
+// Доповни цикл for таким чином, щоб він логував всі цілі числа в діапазоні від start до end включно.
+
+// Оголошена змінна start
+// Значення змінної start - це число 3
+// Оголошена змінна end
+// Значення змінної end - це число 7
+// Оголошена змінна i - лічильник циклу
+// Початкове значення змінної i дорівнює 3
+// Умова циклу приводиться до true доти, доки i менше або дорівнює 7
+// На кожній ітерації значення змінної i збільшується на одиницю
+// Виведення у консоль змінної i покаже числа 3, 4, 5, 6, 7
+
+
+// const start = 3;
+// const end = 7;
+
+// for (let i = start; i <= end; i += 1) { // Change this line
+//   console.log(i);
+// }
+
+
 /**
   |============================
   | TASK # 18
   |============================
 */
+
+// Напиши функцію calculateTotal(number), яка приймає ціле число (параметр number) і повертає суму всіх цілих чисел від одиниці і до цього числа. Наприклад, якщо number дорівнює 3, то сума - це 1 + 2 + 3, тобто 6.
+
+// Оголошена функція calculateTotal(number)
+// Виклик функції calculateTotal(1) повертає 1
+// Виклик функції calculateTotal(3) повертає 6
+// Виклик функції calculateTotal(7) повертає 28
+// Виклик функції calculateTotal(18) повертає 171
+// Виклик функції calculateTotal(24) повертає 300
+// Виклик функції calculateTotal() з випадковим числом повертає правильне значення
+
+
+function calculateTotal(number) {
+ // Change code below this line
+
+
+
+  // Change code above this line
+}
+
+
+
+
+
+
+
+
+
+
+
 /**
   |============================
   | TASK # 19

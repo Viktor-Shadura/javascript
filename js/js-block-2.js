@@ -920,17 +920,24 @@
 // При виконанні цього завдання в тілі функції includes() не можна використовувати метод масив.includes(значення).
 
 
-function includes(array, value) {
-  // Change code below this line
+// function includes(array, value) {
+//   // Change code below this line
 
-  return array.includes(value);
+//   for (let element of array) {
+//     if (element === value) {
 
-  // Change code above this line
-}
+//       return true;
+//       }
+//   }
 
-console.log(includes([1, 2, 3, 4, 5], 3));
-console.log(includes([1, 2, 3, 4, 5], 17));
-console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"));
-console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus"));
-console.log(includes(["apple", "plum", "pear", "orange"], "plum"));
-console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"));
+//   return false;
+
+//   // Change code above this line
+// }
+
+// console.log(includes([1, 2, 3, 4, 5], 3));
+// console.log(includes([1, 2, 3, 4, 5], 17));
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"));
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus"));
+// console.log(includes(["apple", "plum", "pear", "orange"], "plum"));
+// console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"));

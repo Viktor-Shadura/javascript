@@ -13,7 +13,20 @@
 // tags - метаінформація, масив ["premium", "promoted", "top"].
 
 
-const apartment = ;
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+// };
+
+// console.log(apartment.imgUrl);
+// console.log(apartment.descr);
+// console.log(apartment.rating);
+// console.log(apartment.price);
+// console.log(apartment.tags);
+// console.log(apartment);
 
 
 /**
@@ -21,6 +34,24 @@ const apartment = ;
   | TASK # 2
   |============================
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**
   |============================
   | TASK # 3

@@ -360,28 +360,28 @@
 // Виконай рефакторинг рішення попереднього завдання, додавши в цикл for...in перевірку на власну властивість.
 
 
-const keys = [];
-const values = [];
-const advert = {
-  service: "apt",
-};
-const apartment = Object.create(advert);
-apartment.descr = "Spacious apartment in the city center";
-apartment.rating = 4;
-apartment.price = 2153;
+// const keys = [];
+// const values = [];
+// const advert = {
+//   service: "apt",
+// };
+// const apartment = Object.create(advert);
+// apartment.descr = "Spacious apartment in the city center";
+// apartment.rating = 4;
+// apartment.price = 2153;
 
-for (const key in apartment) {
-  // Change code below this line
+// for (const key in apartment) {
+//   // Change code below this line
+//   if (apartment.hasOwnProperty(key)) {
+//       keys.push(key);
+//       values.push(apartment[key]);
+//   }
+//   // Change code above this line
+// }
 
-  keys.push(key);
-  values.push(apartment[key]);
-
-  // Change code above this line
-}
-
-console.log(advert);
-console.log(advert.keys);
-console.log(advert.values);
+// console.log(advert);
+// console.log(keys);
+// console.log(values);
 
 
 /**
@@ -389,26 +389,122 @@ console.log(advert.values);
   | TASK # 12
   |============================
 */
+
+// Напиши функцію countProps(object), яка рахує і повертає кількість власних властивостей об'єкта в параметрі object. Використовуй змінну propCount для зберігання кількості властивостей об'єкта.
+
+
+// function countProps(object) {
+//   let propCount = 0;
+//   const propCountObject = [];
+//   // Change code below this line
+//   for (const key in object) {
+//     if (object.hasOwnProperty(key)) {
+//       propCountObject.push(key);
+//     }
+//   }
+//   propCount = propCountObject.length;
+//   // Change code above this line
+//   return propCount;
+// }
+
+// console.log(countProps({}));
+// console.log(countProps({ name: "Mango", age: 2 }));
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+
+
 /**
   |============================
   | TASK # 13
   |============================
 */
+
+// Перебери об'єкт apartment, використовуючи метод Object.keys() і цикл for...of. Запиши у змінну keys масив ключів власних властивостей об'єкта apartment, і додай в масив values всі значення його властивостей.
+
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const values = [];
+// // Change code below this line
+// const keys = Object.keys(apartment);
+
+// for (const key of keys) {
+//   values.push(apartment[key]);
+// }
+
+// console.log(keys);
+// console.log(values);
+
+
 /**
   |============================
   | TASK # 14
   |============================
 */
+
+// Виконай рефакторинг функції countProps(object), використовуючи метод Object.keys() і, можливо, але не обов'язково, цикл for...of.
+
+
+// function countProps(object) {
+//   // Change code below this line
+//   const propCount = Object.keys(object);
+
+//   return propCount.length;
+//   // Change code above this line
+// }
+
+// console.log(countProps({}));
+// console.log(countProps({ name: "Mango", age: 2 }));
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+
+
 /**
   |============================
   | TASK # 15
   |============================
 */
+
+// Запиши у змінну keys масив ключів власних властивостей об'єкта apartment, а у змінну values - масив всіх значень його властивостей. Використовуй методи Object.keys() і Object.values().
+
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// const values = Object.values(apartment);
+
+// console.log(keys);
+// console.log(values);
+
+
 /**
   |============================
   | TASK # 16
   |============================
 */
+
+// Напиши функцію countTotalSalary(salaries), яка приймає об'єкт зарплат, де ім'я властивості - це ім'я співробітника, а значення властивості - це зарплата. Функція повинна розрахувати загальну суму зарплат співробітників і повернути її. Використовуй змінну totalSalary для зберігання загальної суми зарплати.
+
+
+function countTotalSalary(salaries) {
+  let totalSalary = 0;
+  // Change code below this line
+
+  
+  
+  // Change code above this line
+  return totalSalary;
+}
+
+console.log(countTotalSalary({}));
+console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
+console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }));
+
 /**
   |============================
   | TASK # 17

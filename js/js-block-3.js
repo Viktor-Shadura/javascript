@@ -610,8 +610,15 @@ const products = [
 function getAllPropValues(propName) {
   // Change code below this line
 
+  const arr = [];
 
+  for (const product of products) {
+    if (product[propName]) {
+      arr.push(product[propName]);
+    }
+  }
 
+  return arr;
   // Change code above this line
 }
 

@@ -905,28 +905,21 @@
 // Виклик calculateMeanTemperature({ today: {low: 37, high: 40}, tomorrow: {low: 33, high: 38} }) повертає 37
 
 
-// Change code below this line
-function calculateMeanTemperature(forecast) {
-  const todayLow = forecast.today.low;
-  const todayHigh = forecast.today.high;
-  const tomorrowLow = forecast.tomorrow.low;
-  const tomorrowHigh = forecast.tomorrow.high;
+// // Change code below this line
+// function calculateMeanTemperature(forecast) {
 
-  // Change code above this line
-  return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
-}
+//   const { 
+//     today: { low: todayLow, high: todayHigh }, 
+//     tomorrow: { low: tomorrowLow, high: tomorrowHigh },
+//   } = forecast;
 
+//   // Change code above this line
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
 
+//   }
 
-
-
-
-
-
-
-
-
-
+// console.log(calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} }));
+// console.log(calculateMeanTemperature({ today: {low: 37, high: 40}, tomorrow: {low: 33, high: 38} }));
 
 
 /**
@@ -934,36 +927,253 @@ function calculateMeanTemperature(forecast) {
   | TASK # 27
   |============================
 */
+
+// У змінній scores зберігається масив результатів тестування. Використовуючи розподіл і методи Math.max() і Math.min(), доповни код таким чином, щоб у змінній bestScore був найвищий бал, а у worstScore - найнижчий.
+
+// Оголошена змінна scores
+// Значення змінної scores - це масив [89, 64, 42, 17, 93, 51, 26]
+// Оголошена змінна bestScore
+// Значення змінної bestScore - це число 93
+// Оголошена змінна worstScore
+// Значення змінної worstScore - це число 17
+// Для передачі аргументів методу Math.max() використовується синтаксис ... на масиві scores
+// Для передачі аргументів методу Math.min() використовується синтаксис ... на масиві scores
+
+
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Change code below this line
+// const bestScore = (Math.max(...scores));
+// const worstScore = (Math.min(...scores));
+
+// console.log(bestScore);
+// console.log(worstScore);
+
+
 /**
   |============================
   | TASK # 28
   |============================
 */
+
+// У змінних firstGroupScores, secondGroupScores і thirdGroupScores зберігаються результати тестування окремих груп. Використовуючи розподіл, доповни код таким чином, щоб:
+
+// У змінній allScores зберігався масив всіх результатів від першої до третьої групи.
+// У змінній bestScore був найвищий загальний бал.
+// У змінній worstScore був найнижчий загальний бал.
+// Оголошена змінна firstGroupScores
+// Значення змінної firstGroupScores - це масив [64, 42, 93]
+// Оголошена змінна secondGroupScores
+// Значення змінної secondGroupScores - це масив [89, 14, 51, 26]
+// Оголошена змінна thirdGroupScores
+// Значення змінної thirdGroupScores - це масив [29, 47, 18, 97, 81]
+// Оголошена змінна allScores.
+// Значення змінної allScores - це масив [64, 42, 93, 89, 14, 51, 26, 29, 47, 18, 97, 81]
+// Оголошена змінна bestScore
+// Значення змінної bestScore - це число 97
+// Оголошена змінна worstScore
+// Значення змінної worstScore - це число 14
+// Для присвоєння значення змінної allScores використовувався синтаксис ... для заповнення масиву
+// Для передачі аргументів методу Math.max() використовується синтаксис ... на масиві allScores
+// Для передачі аргументів методу Math.min() використовується синтаксис ... на масиві allScores
+
+
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Change code below this line
+// const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+// const bestScore = Math.max (...allScores);
+// const worstScore = Math.min (...allScores);
+
+// console.log(allScores);
+// console.log(bestScore);
+// console.log(worstScore);
+
+
 /**
   |============================
   | TASK # 29
   |============================
 */
+
+// В конструкторі можна створювати нові тести, для яких є налаштування за замовчуванням, які зберігаються у змінній defaultSettings. Під час створення тесту, усі або частину налаштувань можна перевизначити, вони зберігаються у змінній overrideSettings.
+
+// Для того щоб отримати фінальні налаштування тесту, необхідно взяти налаштування за замовчуванням і поверх них застосувати перевизначені налаштування. Доповни код таким чином, щоб у змінній finalSettings утворився об'єкт фінальних налаштувань тесту.
+
+// Оголошена змінна defaultSettings
+// Значення змінної defaultSettings - це об'єкт
+// Оголошена змінна overrideSettings
+// Значення змінної overrideSettings - це об'єкт
+// Оголошена змінна finalSettings
+// Значення змінної finalSettings - це об'єкт
+// Значення властивості finalSettings.theme дорівнює "light"
+// Значення властивості finalSettings.public дорівнює "false"
+// Значення властивості finalSettings.withPassword дорівнює "true"
+// Значення властивості finalSettings.minNumberOfQuestions дорівнює 10
+// Значення властивості finalSettings.timePerQuestion дорівнює 30
+// Для присвоєння значення змінній finalSettings використовується синтаксис ...
+
+
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = { ...defaultSettings, ...overrideSettings};
+
+// console.log(finalSettings);
+
+
 /**
   |============================
   | TASK # 30
   |============================
 */
+
+// Напиши функцію makeTask(data) яка приймає один параметр data - об'єкт з наступними властивостями.
+
+// text - текст завдання.
+// category - категорія завдання.
+// priority - пріоритет завдання.
+// Функція повинна створити і повернути новий об'єкт завдання, не змінюючи напряму параметр data. У новому об'єкті повинна бути властивість completed, значення якої зберігається в однойменній локальній змінній.
+
+// В параметрі data гарантовано буде тільки властивість text, а інші дві, category і priority, можуть бути відсутніми. Тоді, в новому об'єкті завдання, у властивостях category і priority повинні бути значення за замовчуванням, що зберігаються в однойменних локальних змінних.
+
+// Оголошена функція makeTask(data)
+// Виклик makeTask({}) повертає { category: "General", priority: "Normal", completed: false }
+// Виклик makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }) повертає { category: "Homemade", priority: "Low", text: "Take out the trash", completed: false }
+// Виклик makeTask({ category: "Finance", text: "Take interest" }) повертає { category: "Finance", priority: "Normal", text: "Take interest", completed: false }
+// Виклик makeTask({ priority: "Low", text: "Choose shampoo" }) повертає { category: "General", priority: "Low", text: "Choose shampoo", completed: false }
+// Виклик makeTask({ text: "Buy bread" }) повертає { category: "General", priority: "Normal", text: "Buy bread", completed: false }
+
+
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+
+//   return {completed, category, priority, ...data,};
+
+//   // Change code above this line
+// }
+
+// console.log(makeTask({}));
+// console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
+// console.log(makeTask({ category: "Finance", text: "Take interest" }));
+// console.log(makeTask({ priority: "Low", text: "Choose shampoo" }));
+// console.log(makeTask({ text: "Buy bread" }));
+
+
 /**
   |============================
   | TASK # 31
   |============================
 */
+
+// Використовуючи операцію rest, доповни код функції add() таким чином, щоб вона приймала будь-яку кількість аргументів, рахувала і повертала їх суму.
+
+// Оголошена функція add
+// Функція add використовує параметр args
+// Для збирання аргументів у змінну args, у підписі функції використовується синтаксис ... (оператор rest)
+// Виклик add(15, 27) повертає 42
+// Виклик add(12, 4, 11, 48) повертає 75
+// Виклик add(32, 6, 13, 19, 8) повертає 78
+// Виклик add(74, 11, 62, 46, 12, 36) повертає 241
+
+
+// // Change code below this line
+// function add(...args) {
+//   let totalPrice = 0;
+//   for (const arg of args) {
+//     totalPrice += arg;
+//   }
+
+//   return totalPrice;
+//   // Change code above this line
+// }
+
+// console.log(add(15, 27));
+// console.log(add(12, 4, 11, 48));
+// console.log(add(32, 6, 13, 19, 8));
+// console.log(add(74, 11, 62, 46, 12, 36));
+
+
 /**
   |============================
   | TASK # 32
   |============================
 */
+
+// Функція addOverNum() рахує суму всіх аргументів. Зміни параметри і тіло функції addOverNum() таким чином, щоб вона рахувала суму тільки тих аргументів, які більші за задане число. Це число повинно бути першим параметром функції.
+
+// Оголошена функція addOverNum()
+// Виклик addOverNum(50, 15, 27) повертає 0
+// Виклик addOverNum(10, 12, 4, 11, 48, 10, 8) повертає 71
+// Виклик addOverNum(15, 32, 6, 13, 19, 8) повертає 51
+// Виклик addOverNum(20, 74, 11, 62, 46, 12, 36) повертає 218
+
+
+// // Change code below this line
+// function addOverNum(...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+//     if(arg > args[0])
+//     total += arg;
+//   }
+
+//   return total;
+//   // Change code above this line
+// }
+
+// console.log(addOverNum(50, 15, 27));
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+// console.log(addOverNum(15, 32, 6, 13, 19, 8));
+// console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
+
+
 /**
   |============================
   | TASK # 33
   |============================
 */
+
+// Функція findMatches() приймає довільну кількість аргументів. Першим аргументом завжди буде масив чисел, а решта аргументів будуть просто числами.
+
+// Доповни код функції таким чином, щоб вона повертала новий масив matches, в якому будуть тільки ті аргументи, починаючи з другого, які є в масиві першого аргументу.
+
+// Наприклад, findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7) повинна повернути масив [1, 2], тому що тільки вони є в масиві першого аргументу.
+
+// Оголошена функція findMatches()
+// Виклик findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7) повертає [1, 2]
+// Виклик findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2) повертає [17, 89, 2]
+// Виклик findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41) повертає [24, 9, 41]
+// Виклик findMatches([63, 11, 8, 29], 4, 7, 16) повертає []
+
+
+// Change code below this line
+function findMatches() {
+  const matches = []; // Don't change this line
+
+  // Change code above this line
+  return matches;
+}
+
+console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+console.log(findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
+console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
+console.log(findMatches([63, 11, 8, 29], 4, 7, 16));
+
+
 /**
   |============================
   | TASK # 34
